@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+    --box-shadow:rgba(0,0,0,0.16) 0px 1px 4px;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins','sans-serif';
+    list-style: none;
+}
+
+main{
+    background-color: #F5F7FA;
+    min-height: 100vh;
+}
+form{
+    background-color: #FFFFFF;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:30px;
+    width: 300px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+}
+.logoImg{
+    width:70px;
+    height:70px;
+    margin-left: 40%;
+}
+form h3{
+    text-align:center;
+    font-size:35px;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+form input[type="text"]{
+    border:1px solid grey;
+    outline:none;
+    appearance:none;
+    padding:10px 30px;
+    border-radius: 5px;
+    margin-top:10px;
+    padding-left:10px;
+}
+.error-display{
+    display:none;
+}
+.error{
+   font-size:14px;
+   color:red;
+   font-weight:bolder;
+}
+.error-icon{
+    font-size:16px;
+    color:red;
+    font-weight:bolder;
+}
+form input[type="password"]{
+    border:1px solid grey;
+    outline:none;
+    appearance:none;
+    padding:10px 30px;
+    border-radius:5px;
+    margin-top:10px;
+    padding-left:10px;
+}
+.eye-box{
+    position:absolute;
+    top:61%;
+    left:83%;
+    cursor: pointer;
+}
+.eye{
+    font-size:20px;
+}
+.link-one{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top:5px;
+    margin-left:155px;
+}
+form input[type="submit"]{
+    padding:8px;
+    background-color:#0cdd63;
+    color:white;
+    border-radius:5px;
+    font-size:18px;
+    border:none;
+    cursor:pointer;
+    margin-top:10px;
+}
+.link-two{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left:5px;
+    text-decoration: underline;
+}
+.link-two:hover{
+    text-decoration: none;
+}
+form h4{
+    margin:auto;
+    margin-top:10px;
+}
+.loader-box{
+    background-color:#2d2d2d2d;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+    height:120px;
+    width:130px;
+    display:none;
+    backdrop-filter: blur(20px);
+}
+
+.loader{
+    border:7px solid white;
+    border-top:7px solid #2666CF;
+    margin:25px auto;
+    height:50px;
+    width:50px;
+    transform:rotate(0deg);
+    border-radius:50%;
+    animation:rotate 1s linear infinite;
+} 
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+
+
+

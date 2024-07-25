@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="/Booking/booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="bookbox">
+        <img src="/images/logo2.png" class="logo">
+        <h1>Book Now</h1>
+        <form class="booking-form">
+            <p>Fullname</p>
+            <input type="text" name="fullname" placeholder="Enter Fullname" required autocomplete="off">
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Email" required autocomplete="off">
+            <p>Age</p>
+            <input type="number" name="age" placeholder="Enter Age" required autocomplete="off">
+            <p>Booking Date</p>
+            <input type="date" name="booking_date" required>
+            <p>Contact</p>
+            <input type="number" name="contact" placeholder="Enter Contact Number" required autocomplete="off">
+            <div>
+              <p>Set Time</p>
+              <select id="hours"></select>
+              <select id="minutes"></select>
+              <select id="time-format">
+                <option>AM</option>
+                <option>PM</option>
+              </select>
+            </div>
+            <button type="submit" class="buttonnow">Submit</button>
+        </form>
+        <a href="../index.html">
+            <button class="cancel-booking">Cancel</button>
+        </a>
+        <div class="popup">
+            <div class="img"><ion-icon class="tick" name="checkmark-outline"></ion-icon></div>
+            <h2>Thank You</h2>
+            <p>Your appointment was booked successfully</p>
+            <button class="closePopUp">OK</button>
+        </div>
+        <div class="loader-box">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <script src="/dist/booking.bundle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

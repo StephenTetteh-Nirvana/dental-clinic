@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 30;
+    background: url(/images/servv.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookbox{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 620px;
+    background: cornflowerblue;
+    color: #fff;
+    padding: 70px 30px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 38%;
+}
+h1{
+    margin: 0;
+    padding: 0 0 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.bookbox p{
+    margin: 50;
+    padding: 0;
+    font-weight: bold;
+}
+.bookbox input{
+    width: 99%;
+    margin-bottom: 20px;
+
+}
+.bookbox input[type="text"], input[type="Email"], input[type="date"],input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    height: 40px;
+    color: rgb(255, 251, 251);
+    font-size: 16px;
+    background: transparent;
+}
+select{
+    padding:8px;
+    border-radius: 5px;
+}
+.buttonnow{
+    width:99%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: #ffa631;
+    position: relative;
+    cursor: pointer;
+    transition: 00.5s;
+    border-radius: 5px;
+    border:none;
+    margin-top:10px;
+}
+.buttonnow:hover{
+    background: #b57420;
+    border: 0px solid #ffa631;
+}
+.cancel-booking{
+    width:99%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: red;
+    position: relative;
+    cursor: pointer;
+    transition: 00.5s;
+    border-radius: 5px;
+    margin-top:10px;
+    border:none;
+}
+.cancel-booking:hover{
+    background: red;
+    border: 0px solid red;
+}
+.popup{
+    position:absolute;
+    top:0;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#ffffff;
+    width:350px;
+    height:270px;
+    text-align:center;
+    transition:0.5s all;
+    z-index: 999;
+}
+.active{
+    visibility: visible;
+    top:57%;
+    transform:translate(-50%,-50%) scale(1);
+}
+.popup .img{
+    width:100px;
+    height:100px;
+    margin-top:-40px;
+    border-radius:50%;
+    background-color:green;
+    text-align:center;
+    display:flex;
+    margin-left:120px;
+}
+.tick{
+  font-size:60px;
+  color:white; 
+  margin:auto;
+}
+.popup h2{
+    margin-top:10px;
+    font-size:30px;
+    color: black;
+}
+.popup p{
+    font-size:18px;
+    margin-top:10px;
+    color: black;
+}
+.popup button{
+    margin-top:10px;
+    width:90%;
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    cursor:pointer;
+}
+.loader-box{
+    background-color:#2d2d2d2d;
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 10px;
+    height:120px;
+    width:130px;
+    z-index: 980;
+    display:none;
+    backdrop-filter: blur(20px);
+}
+
+.loader{
+    border:7px solid white;
+    border-top:7px solid #2666CF;
+    margin:25px auto;
+    height:50px;
+    width:50px;
+    transform:rotate(0deg);
+    border-radius:50%;
+    animation:rotate 1s linear infinite;
+} 
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
